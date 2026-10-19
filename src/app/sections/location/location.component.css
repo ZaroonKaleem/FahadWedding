@@ -1,0 +1,122 @@
+.loc-wrap {
+  position: relative;
+  background-color: #f9f0e0;
+  padding: 0 20px 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.loc-heading {
+  font-family: 'NewFonts', Arial, sans-serif;
+  font-size: 41px;
+  font-weight: 300;
+  color: #a67d2b;
+  line-height: 1.55;
+  margin: 0 0 28px;
+}
+
+/* decorative corner flowers */
+.loc-deco {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.85;
+}
+.loc-deco--tl { top: 0; left: -10px; width: 60px; transform: rotate(217deg); }
+.loc-deco--tr { top: 0; right: 0;   width: 55px; }
+.loc-deco--bl { bottom: 20px; left: 0;  width: 52px; }
+.loc-deco--br { bottom: 20px; right: 0; width: 55px; transform: rotate(-15deg); }
+
+/* rows */
+.loc-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 36px;
+}
+
+/* venue block */
+.loc-venue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loc-photo {
+  width: 320px;
+  height: 213px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.loc-photo-home {
+  width: 320px;
+  height: 213px;
+  object-fit: contain;
+  border-radius: 2px;
+  display: block;
+}
+
+.loc-row--two .loc-photo-home {
+  width: 240px;
+  height: 160px;
+}
+
+.loc-row--two .loc-photo {
+  width: 240px;
+  height: 160px;
+}
+
+.loc-event {
+  font-family: 'NewFonts', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #a67d2b;
+  margin: 12px 0 2px;
+  line-height: 1.3;
+}
+
+.loc-name {
+  font-family: 'NewFonts', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #6c513f;
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.loc-time {
+  font-family: 'NewFonts', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #8c7666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.loc-addr {
+  font-family: 'NewFonts', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: #8c7666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 639px) {
+  .loc-row--two {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .loc-photo,
+  .loc-row--two .loc-photo {
+    width: 260px;
+    height: 173px;
+  }
+
+  .loc-heading {
+    font-size: 32px;
+  }
+}
